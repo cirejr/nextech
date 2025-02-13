@@ -1,4 +1,5 @@
 import EmptyRectangle from "@/components/global/empty-rectangle";
+import CTA from "@/components/sections/cta";
 import Hero from "@/components/sections/hero";
 import Services from "@/components/sections/services";
 import Solutions from "@/components/sections/solutions";
@@ -12,6 +13,7 @@ export default function Home() {
       <Solutions />
       <EmptyRectangle />
       <Services />
+      <CTA />
     </div>
   );
 }

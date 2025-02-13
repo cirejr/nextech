@@ -1,5 +1,6 @@
 import { PerfectSquareGridSection } from "@/components/global/square-grid-section";
 import {
+  ArrowRightIcon,
   IdCardIcon,
   ScanEyeIcon,
   SparklesIcon,
@@ -40,7 +41,7 @@ export default function Solutions() {
   ];
 
   return (
-    <section>
+    <section id="solutions">
       <PlusCornerSection className="mx-auto border-b p-6">
         <h1 className="text-center text-3xl font-bold leading-normal tracking-tighter sm:text-4xl md:text-5xl">
           <span className="text-purple-500">Solutions</span>
@@ -63,7 +64,7 @@ type ItemProps = {
 
 function Item({ title, description, icon, children, isReady }: ItemProps) {
   return (
-    <div className="container flex h-full w-full flex-col items-start justify-center gap-4 p-4">
+    <div className="container flex h-full w-full max-w-xs flex-col items-start justify-center gap-4 p-4">
       <div className="flex w-fit items-center gap-2">
         {icon}
         <h1 className="text-2xl font-medium">{title}</h1>
@@ -77,7 +78,12 @@ function Item({ title, description, icon, children, isReady }: ItemProps) {
         {description}
       </p>
       {children}
-      {isReady && <CustomLink href="#"> Read More</CustomLink>}
+      {isReady && (
+        <CustomLink className="w-full" href="#">
+          Read More
+          <ArrowRightIcon className="h-4 w-4" />
+        </CustomLink>
+      )}
     </div>
   );
 }

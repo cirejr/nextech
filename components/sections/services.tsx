@@ -24,7 +24,10 @@ const services = [
 export default function Services() {
   return (
     <PlusCornerSection>
-      <div className="flex h-full w-full flex-col items-center justify-center gap-4 border-t p-4">
+      <div
+        className="flex h-full w-full flex-col items-center justify-center gap-4 border-t p-4"
+        id="services"
+      >
         <div className="flex w-fit items-center gap-2">
           <h1 className="text-5xl font-bold">Services</h1>
         </div>

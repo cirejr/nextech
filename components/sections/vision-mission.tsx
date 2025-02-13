@@ -3,7 +3,7 @@ import TwoGridSection from "../global/two-grid-section";
 
 export default function VisionMission() {
   return (
-    <section>
+    <section id="vision-mission">
       <div className="mx-auto border-b p-6">
         <h1 className="text-center text-3xl font-bold leading-normal tracking-tighter sm:text-4xl md:text-5xl">
           <span className="text-purple-500">Vision</span> & Mission

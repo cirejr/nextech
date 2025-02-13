@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/sections/header";
 import Footer from "@/components/sections/footer";
+import { Toaster } from "@/components/ui/toaster";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,6 +18,21 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "NexTech",
   description: "At the forefront of the future",
+  metadataBase: new URL("https://nextech-africa.vercel.app"),
+  openGraph: {
+    type: "website",
+    url: "https://nextech-africa.vercel.app/og-image",
+    images: [{ url: "/og.png" }],
+    title: "NexTech",
+    description: "At the forefront of the future",
+  },
+  twitter: {
+    images: ["https://nextech-africa.vercel.app/og-image.png"],
+    card: "summary_large_image",
+    title: "NexTech",
+    description: "At the forefront of the future",
+    creator: "@cirejr_",
+  },
 };
 
 export default function RootLayout({
@@ -31,6 +47,7 @@ export default function RootLayout({
       >
         <Header />
         <main className="container mx-auto max-w-[1080px]">{children}</main>
+        <Toaster />
         <Footer />
       </body>
     </html>

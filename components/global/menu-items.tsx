@@ -17,7 +17,9 @@ import {
 const menuItems = [
   {
     title: "Products",
-    items: [
+    items: [],
+    href: "/#solutions",
+    /* items: [
       {
         title: "NxPay",
         href: "/products/nxpay",
@@ -30,9 +32,9 @@ const menuItems = [
         description:
           "Automate Excel file generation with AI-powered templates.",
       },
-    ],
+    ], */
   },
-  {
+  /* {
     title: "Open Source",
     items: [
       {
@@ -47,7 +49,7 @@ const menuItems = [
         description: "A simple and secure authentication system for web apps.",
       },
     ],
-  },
+  }, */
   {
     title: "Company",
     items: [
@@ -79,14 +81,14 @@ const menuItems = [
       },
     ],
   },
-  {
+  /* {
     title: "Pricing",
     href: "#",
     items: [],
-  },
+  }, */
   {
     title: "Contact Us",
-    href: "#",
+    href: "/contact",
     items: [],
   },
 ];
@@ -103,7 +105,7 @@ export function MenuItems() {
               </NavigationMenuTrigger>
             ) : (
               <NavigationMenuItem>
-                <Link href={section.title} legacyBehavior passHref>
+                <Link href={section.href!} legacyBehavior passHref>
                   <NavigationMenuLink
                     className={cn(
                       navigationMenuTriggerStyle(),

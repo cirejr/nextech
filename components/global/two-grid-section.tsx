@@ -4,10 +4,16 @@ export default function TwoGridSection({
   className,
   children,
   cornerPlus = true,
+  childrenWrapperClassName,
+  containerClassName,
+  leftInnerContainerClassName,
 }: {
   className?: string;
   children: React.ReactNode;
   cornerPlus?: boolean;
+  childrenWrapperClassName?: string;
+  containerClassName?: string;
+  leftInnerContainerClassName?: string;
 }) {
   return (
     <section
@@ -28,9 +34,18 @@ export default function TwoGridSection({
           <div className="absolute left-1/2 top-1/2 h-5 w-[0.5px] -translate-x-1/2 -translate-y-1/2 rotate-90 bg-foreground"></div>
         </div>
       )}
-      {children}
-      <div className="absolute left-0 top-0 z-0 flex h-full w-full">
-        <div className="h-full w-1/2 border-r"></div>
+      <div className={cn("z-30 w-full p-6", childrenWrapperClassName)}>
+        {children}
+      </div>
+      <div
+        className={cn(
+          "absolute left-0 top-0 z-0 flex h-full w-full",
+          containerClassName
+        )}
+      >
+        <div
+          className={cn("h-full w-1/2 border-r", leftInnerContainerClassName)}
+        ></div>
       </div>
     </section>
   );
