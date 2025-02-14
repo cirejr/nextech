@@ -1,5 +1,6 @@
 import React from "react";
 import PlusCornerSection from "../global/plus-section";
+import { CustomLink } from "@/components/global"
 
 export default function Hero() {
   return (
