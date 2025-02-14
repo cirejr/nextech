@@ -15,13 +15,11 @@ export default function Hero() {
           for businesses, developers, and the future.
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row">
-          <a
-            className="flex h-10 items-center justify-center gap-2 rounded-full border border-solid border-transparent bg-foreground px-4 text-sm text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] sm:h-12 sm:px-5 sm:text-base"
+          <CustomLink
             href="/#solutions"
-            rel="noopener noreferrer"
           >
             Explore Our Solutions
-          </a>
+          </CustomLink>
           <CustomLink
             variant="secondary"
             href="/contact"
