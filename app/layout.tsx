@@ -16,20 +16,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "NexTech",
+  title: "Vetra",
   description: "At the forefront of the future",
   metadataBase: new URL("https://nextech-africa.vercel.app"),
   openGraph: {
     type: "website",
     url: "https://nextech-africa.vercel.app/og-image",
     images: [{ url: "/og.png" }],
-    title: "NexTech",
+    title: "Vetra",
     description: "At the forefront of the future",
   },
   twitter: {
     images: ["https://nextech-africa.vercel.app/og-image.png"],
     card: "summary_large_image",
-    title: "NexTech",
+    title: "Vetra",
     description: "At the forefront of the future",
     creator: "@cirejr_",
   },

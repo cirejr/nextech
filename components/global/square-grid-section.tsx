@@ -54,11 +54,11 @@ export function PerfectSquareGridSection({
         </div>
       )}
       <div className="grid h-full w-full grid-cols-1 md:grid-cols-2">
-        <div className="min-h-1/2 col-span-1 flex flex-col">
+        <div className="min-h-1/2 col-span-1 flex w-full flex-col">
           {children.slice(0, 2).map((child, index) => (
             <div
               key={index}
-              className="mx-auto min-h-[450px] flex-1 border-b lg:px-16"
+              className="mx-auto flex min-h-[450px] min-w-full items-center justify-center border-b lg:px-16"
             >
               {child}
             </div>
@@ -66,7 +66,10 @@ export function PerfectSquareGridSection({
         </div>
         <div className="min-h-1/2 col-span-1 flex flex-col">
           {children.slice(2, 4).map((child, index) => (
-            <div key={index} className="min-h-[450px] flex-1 border-b lg:px-16">
+            <div
+              key={index}
+              className="mx-auto flex min-h-[450px] min-w-full items-center justify-center border-b lg:px-16"
+            >
               {child}
             </div>
           ))}

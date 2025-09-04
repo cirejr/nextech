@@ -11,7 +11,7 @@ export default function Header() {
           className="flex items-center justify-center text-2xl font-medium"
           href="/"
         >
-          NexTech
+          Vetra
         </Link>
 
         <nav className="hidden items-center gap-4 sm:gap-6 md:flex">

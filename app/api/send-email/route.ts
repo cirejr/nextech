@@ -11,7 +11,7 @@ export async function POST(request: Request) {
   console.log("formData", email, message);
   try {
     const { data, error } = await resend.emails.send({
-      from: "NexTech <onboarding@resend.dev>",
+      from: "Vetra <onboarding@resend.dev>",
       to: ["delivered@resend.dev"],
       subject: "Contact Form Submission",
       react: ContactFormEmail({ email, message }),

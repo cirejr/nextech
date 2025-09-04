@@ -15,7 +15,7 @@ export default function VisionMission() {
             Powering Africa&apos;s Future
           </h2>
           <p className="text-lg leading-8 text-muted-foreground">
-            At NexTech, we believe Africa is the next global tech hub. We build
+            At Vetra, we believe Africa is the next global tech hub. We build
             scalable, world-class solutions that empower developers, businesses,
             and enterprises to innovate without limits. Our mission is to
             provide open-source tools and commercial products that accelerate

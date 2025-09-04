@@ -23,7 +23,7 @@ export default function Page() {
                   <span className="flex items-center gap-2 text-foreground">
                     <LayoutDashboard className="h-4 w-4" /> Get a custom demo
                   </span>
-                  Discover the value of NexTech for your enterprise and explore
+                  Discover the value of Vetra for your enterprise and explore
                   our custom plans and pricing.
                 </p>
               </div>
@@ -33,8 +33,8 @@ export default function Page() {
                     <LaptopMinimalCheck className="h-4 w-4" /> Set up your
                     Business&apos;s success.
                   </span>
-                  See for yourself how NexTech Enterprise speeds up your
-                  workflow & impact.
+                  See for yourself how Vetra Enterprise speeds up your workflow
+                  & impact.
                 </p>
               </div>
             </div>
@@ -60,8 +60,8 @@ export default function Page() {
             </TwoGridSection>
             <div className="mx-auto px-6">
               <p className="text-lg font-normal text-muted-foreground">
-                At NexTech, we make Africa GREAT, developers and businesses
-                lives easier,{" "}
+                At Vetra, we make Africa GREAT, developers and businesses lives
+                easier,{" "}
                 <span className="text-foreground">
                   let them get to that dream spot
                 </span>
@@ -94,8 +94,8 @@ export default function Page() {
             </TwoGridSection>
             <div className="mx-auto px-6">
               <p className="text-lg font-normal text-muted-foreground">
-                At NexTech, we make Africa GREAT, developers and businesses
-                lives easier,
+                At Vetra, we make Africa GREAT, developers and businesses lives
+                easier,
                 <span className="text-foreground">
                   let them get to that dream spot
                 </span>

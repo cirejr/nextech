@@ -56,8 +56,7 @@ const menuItems = [
       {
         title: "About Us",
         href: "/company/about",
-        description:
-          "Learn more about NexTech's mission and vision for Africa.",
+        description: "Learn more about Vetra's mission and vision for Africa.",
       },
       {
         title: "Careers",

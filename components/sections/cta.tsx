@@ -15,8 +15,10 @@ export default function CTA() {
       <p className="text-lg font-normal leading-normal text-muted-foreground">
         Talk to an expert for your PRO or ENTREPRISE needs.
       </p>
-      <div className="flex items-center gap-4">
-        <CustomLink href="/#solutions">Check Our Solutions</CustomLink>
+      <div className="flex w-full flex-1 items-center justify-center gap-4">
+        <CustomLink href="/#solutions" className="translate-x-[-50px]">
+          Check Our Solutions
+        </CustomLink>
         <CustomLink href="/contact" variant="secondary">
           Contact Sales
         </CustomLink>
