@@ -1,5 +1,6 @@
 import React from "react";
 import PlusCornerSection from "../global/plus-section";
+import CustomLink from "../global/custom-link";
 
 export default function Hero() {
   return (
@@ -30,7 +31,7 @@ export default function Hero() {
             rel="noopener noreferrer"
           >
             Join the Innovation
-          </a>
+          </CustomLink>
         </div>
       </div>
     </PlusCornerSection>
